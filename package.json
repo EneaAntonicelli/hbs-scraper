@@ -1,0 +1,27 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "Web scraper for news articles",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EneaAntonicelli/scraper.git"
+  },
+  "author": "Enea Antonicelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EneaAntonicelli/scraper/issues"
+  },
+  "homepage": "https://github.com/EneaAntonicelli/scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.3.2",
+    "morgan": "^1.9.1"
+  }
+}

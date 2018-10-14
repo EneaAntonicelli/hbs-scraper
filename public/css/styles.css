@@ -1,0 +1,58 @@
+.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    background-color: white;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+.navbar {
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+#articleImage {
+    float: left;
+    margin: 0 30px 30px 30px;
+}
+#authorName{
+    margin: 30px;
+}
+
+#titleHeading {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+#titleHeading:hover {
+    color: rgb(153, 153, 153);
+}
+
+#saveButton {
+    width: 100px;
+    background: white;
+    border: solid grey 1px
+}
+#saveButton:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+#saveButton:active {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border-color: white;
+}

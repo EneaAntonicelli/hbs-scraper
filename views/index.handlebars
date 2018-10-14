@@ -1,0 +1,23 @@
+<div class="container">
+{{#each Article}}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="jumbotron">
+                <h2 class="display-6"><a href="{{this.link}}" id="titleHeading" target="_blank">{{this.title}}</a></h2>
+                <hr class="my-4">
+                <p id="authorName">Written By: {{this.author}}</p>
+                <img src="{{this.img}}" id="articleImage"></img>
+                <p class="lead">{{this.summary}}</p>
+                <div>
+                    <form action="/save" method="POST">
+                        <input name="_id" value="{{this._id}}" type="hidden"/>
+                        <button type="submit" id="saveButton" class="btn btn-default">SAVE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+</div>

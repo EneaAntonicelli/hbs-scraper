@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    {{#each article}}
+    <div class="col-md-12">
+        <h2><a href="{{this.link}}" target="_blank">{{this.title}}</a></h2>
+        <p>{{this.summary}}</p>
+        <div class="hidden-comment-form">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    {{#each comment}}
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                {{this.comment}}
+                            </p>
+                            <form action="/remove-comment/{{this._id}}" method="POST">
+                                <input name="_id" value="{{this._id}}" type="hidden" />
+                                <button type="submit" class="btn btn-default">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <form action="/add-comment/{{this._id}}" method="POST">
+                            <input class="form-control" name="comment" />
+                            <button type="submit" class="btn btn-default">Add Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form action="/unsave" method="POST">
+                <input name="_id" value="{{this._id}}" type="hidden" />
+                <button type="submit" class="btn btn-default">Unsave »</button>
+            </form>
+            <a class="btn btn-default" data-article="{{this._id}}" target="_blank">View Comments</a>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
