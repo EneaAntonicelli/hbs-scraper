@@ -32,7 +32,7 @@
     margin: 30px;
 }
 
-#titleHeading {
+.titleHeading {
     text-decoration: none;
     color: rgb(85, 85, 85);
 }
@@ -41,8 +41,9 @@
     margin-bottom: 3rem;
 }
 
-#titleHeading:hover {
+.titleHeading:hover {
     color: rgb(153, 153, 153);
+    text-decoration: none;
 }
 
 #saveButton {
@@ -51,14 +52,33 @@
     border: solid grey 1px;
     margin: 3px 0 0 400px;
 }
-#saveButton:hover {
+.egaButton {
+    background: white;
+    border: solid grey 1px;
+    margin: 30px 20px 0 0;
+    float: left;
+}
+.commentButtonRow {
+    margin: 20px;
+}
+#saveButton:hover, .egaButton {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
 }
-#saveButton:active {
+#saveButton:active, .egaButton {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
     border-color: white;
+}
+.savedRow {
+    margin: 30px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border-color: white;
+}
+
+body {
+    background: rgba(196, 196, 196, 0.171);
 }

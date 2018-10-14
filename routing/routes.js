@@ -118,7 +118,7 @@ router.post("/unsave", function (req, res) {
 });
 
 router.get("/saved", function (req, res) {
-    db.Article.find({ saved: true }).sort({ updatedAt: -1 }).populate("comment").exec(article)
+    db.Article.find({ saved: true }).sort({ updatedAt: -1 }).populate("comment")
         .then(function (article) {
             res.render("saved", {
                 title: "SAVED",
@@ -142,7 +142,7 @@ router.post("/add-comment/:id", (req, res) => {
                     if (err) {
                         console.log(err);
                     } else {
-                        res.redirect('../../saved');
+                        res.redirect('/saved');
                     }
                 });
         }

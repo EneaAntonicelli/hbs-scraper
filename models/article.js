@@ -36,10 +36,10 @@ var ArticleSchema = new Schema({
         required: true,
         unique: true
     },
-    comment: {
+    comment: [{
         type: Schema.Types.ObjectId,
         ref: "Comment"
-    },
+    }],
     saved: {
         type: Boolean,
         required: true,
