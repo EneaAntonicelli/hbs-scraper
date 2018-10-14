@@ -17,6 +17,7 @@
     -moz-box-shadow: 0 0 20px #ccc;
     -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
+    padding: 2rem 2rem;
 }
 .navbar {
     -moz-box-shadow: 0 0 20px #ccc;
@@ -36,6 +37,10 @@
     color: rgb(85, 85, 85);
 }
 
+.lead {
+    margin-bottom: 3rem;
+}
+
 #titleHeading:hover {
     color: rgb(153, 153, 153);
 }
@@ -43,7 +48,8 @@
 #saveButton {
     width: 100px;
     background: white;
-    border: solid grey 1px
+    border: solid grey 1px;
+    margin: 3px 0 0 400px;
 }
 #saveButton:hover {
     -moz-box-shadow: 0 0 10px #ccc;
